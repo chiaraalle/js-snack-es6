@@ -25,12 +25,16 @@ const biciclette = [
     }
   ];
 
-  /*for (let i in biciclette) {
-    console.log(biciclette[i].peso);
-  }*/
-    for (let i = 0; i < biciclette.length; i++) {
-        console.log(biciclette[i].peso);
-      }
+let biciclettaPiuLeggera = biciclette[0];
+
+for (let i = 1; i < biciclette.length; i++) {
+  if (biciclette[i].peso < biciclettaPiuLeggera.peso) {
+    biciclettaPiuLeggera = biciclette[i];
+  }
+}
+
+console.log(biciclettaPiuLeggera);
+
 
 /*Snack2
 Creare un array di oggetti di squadre di calcio.
