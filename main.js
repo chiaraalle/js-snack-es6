@@ -57,7 +57,7 @@ for (let i = 0; i < squadre.length; i++) {
      squadre[i].puntiFatti = Math.floor(Math.random() * 100) + 1;
      squadre[i].falliSubiti = Math.floor(Math.random() * 100) + 1;
 
-     arraySquadre.push(squadre[i].nome, squadre[i].falliSubiti)
+     arraySquadre.push({nome: squadre[i].nome, falliSubiti: squadre[i].falliSubiti})
   }
 
   
@@ -68,3 +68,13 @@ console.log(arraySquadre);
 /*Snack 3 (Bonus)
 Scrivere una funzione che accetti tre argomenti, un array ( esempio: ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'] )e due numeri (a più piccolo di b).
 La funzione ritornerà un nuovo array con li elementi estratti dall'array di partenza che hanno la posizione compresa tra i due numeri (a e b).*/
+
+const arrayNomi = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
+const a = 2;
+const b = 6;
+
+let arrayElementiTrovati = [];
+
+function estraiElementi(nomi, num1, num2){
+
+}
