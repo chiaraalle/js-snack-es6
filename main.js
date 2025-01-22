@@ -75,6 +75,14 @@ const b = 6;
 
 let arrayElementiTrovati = [];
 
-function estraiElementi(nomi, num1, num2){
+function estraiElementi(nomi, num1, num2){ //ciclofor con condizione e dopo .push
+    for (let i = 0; i < nomi.length; i++) { //
+        if(i >= num1 && i <= num2){
+            arrayElementiTrovati.push(nomi[i]);
+        }
 
+    }
+    return arrayElementiTrovati
 }
+
+console.log(arrayElementiTrovati);
