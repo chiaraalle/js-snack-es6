@@ -49,15 +49,21 @@ const squadre = [
   { nome: 'Milan', puntiFatti: 0, falliSubiti: 0 },
   { nome: 'Roma', puntiFatti: 0, falliSubiti: 0 },
   { nome: 'Napoli', puntiFatti: 0, falliSubiti: 0 }
-]; 
+];
+
+const arraySquadre = [];
 
 for (let i = 0; i < squadre.length; i++) {
      squadre[i].puntiFatti = Math.floor(Math.random() * 100) + 1;
      squadre[i].falliSubiti = Math.floor(Math.random() * 100) + 1;
 
+     arraySquadre.push(squadre[i].nome, squadre[i].falliSubiti)
   }
 
+  
+
 console.log(squadre);
+console.log(arraySquadre);
 
 /*Snack 3 (Bonus)
 Scrivere una funzione che accetti tre argomenti, un array ( esempio: ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'] )e due numeri (a più piccolo di b).
