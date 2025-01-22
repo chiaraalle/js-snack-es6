@@ -85,4 +85,5 @@ function estraiElementi(nomi, num1, num2){ //ciclofor con condizione e dopo .pus
     return arrayElementiTrovati
 }
 
+estraiElementi(arrayNomi, a, b)
 console.log(arrayElementiTrovati);
